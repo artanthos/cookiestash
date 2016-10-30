@@ -1,5 +1,5 @@
 # cookiestash - JS private cookie class
-=============
+
 1. [Intro](#intro)
 2. [Problem](#problem)
 3. [Solution](#solution)
