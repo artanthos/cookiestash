@@ -32,11 +32,11 @@ CookieStash.prototype.set = function (name, value) // set cookie
 
 ## Problem
 
-The `this.maxDuration` is pretty useless. As soon as you instantiate the `Cookie` class, you are able to alter its `maxDuration` property.
+The `this.maxDuration` is pretty useless. As soon as you instantiate the `CookieStash` class, you are able to alter its `maxDuration` property.
 
 
 ```javascript
-var gimmeCookie = new Cookie();
+var gimmeCookie = new CookieStash();
 gimmeCookie.maxDuration = 1000; // all the cookies will now expire within a default of 3 years' time
 ```
 
