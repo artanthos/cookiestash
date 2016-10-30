@@ -84,11 +84,35 @@ var CookieStash = (function() {
 ```
 
 We saw that `this.maxDuration` wasn't so "private" for each class instance. 
+
 So, we've replaced the usage of `this.maxDuration` with the method `this.getMaxDuration()`, which contains an adequate private property, namely `$stash[this.sID].maxDuration`.
+
 `maxDuration` is not longer a `this` property (namely public) and as such, you can't modify it outside its instantiation.
+
 I've also made `date` as a private property, just for the fun of it.
+
 Now, instead of calling `var date = new Date()` each time, you can summon the method `this.getDate()` instead.
 
-Thanks and check out the source code.
+The `CookieStash` class has the following methods:
+
+1. get
+2. isset
+3. set with expiry
+4. set (without expiry)
+5. erase
+
+So, once you summon the class, you'd have:
+
+```javascript
+var cookieStash = new CookieStash();
+
+cookieStash.get('isFirstVisit') // if it's not set, it'll return false; otherwise, returns the value
+cookieStash.isset('isFirstVisit') // returns true / false
+cookieStash.setWithExpiry('isFirstVisit', 1, 30) // set cookie with value and expiry date
+cookieStash.set('isFirstVisit', 1) // set cookie with just the value (will self-destruct in the defaulted no. of days - see getMaxDuration method)
+cookieStash.erase('isFirstVisit') // delete cookie
+```
+
+Thanks and make sure to check out the source code.
 
 Happy coding!
