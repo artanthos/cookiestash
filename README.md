@@ -41,7 +41,7 @@ The `this.maxDuration` is pretty useless. As soon as you instantiate the `Cookie
 
 ```javascript
 var gimmeCookie = new Cookie();
-gimmeCookie.maxDuration = 1000; // this cookie will now expire within 3 years' time
+gimmeCookie.maxDuration = 1000; // all the cookies will now expire within a default of 3 years' time
 ```
 
 ## Solution
