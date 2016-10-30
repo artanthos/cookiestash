@@ -1,8 +1,6 @@
 # cookiestash
-js private cookie class
-
-Cookie Stash
 =============
+js private cookie class
 
 1. [Intro](#intro)
 2. [Problem](#problem)
