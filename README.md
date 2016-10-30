@@ -15,7 +15,7 @@ Most people use `this` inside an object and they leave their data unprotected, m
 So, let's take this code:
 
 ```javascript
-function Cookie() {
+function CookieStash() {
   this.maxDuration = 30; // default no. of days after which a cookie is set to expire
 }
 
