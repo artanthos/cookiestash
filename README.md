@@ -1,5 +1,4 @@
-# cookiestash
-js private cookie class
+# cookiestash - JS private cookie class
 =============
 
 1. [Intro](#intro)
