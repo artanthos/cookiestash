@@ -97,7 +97,7 @@ The `CookieStash` class has the following methods:
 4. set (without expiry)
 5. erase
 
-So, once you summon the class, you'd have:
+So, once you summon the class, you'll have:
 
 ```javascript
 var cookieStash = new CookieStash();
